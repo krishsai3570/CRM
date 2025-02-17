@@ -24,15 +24,15 @@ urlpatterns = [
 
      path('', views.dashboard, name='dashboard'),
 
-    path("costumer/add/",views.CostumerView.as_view(),name="add"),
+    path("customer/add/",views.CostumerView.as_view(),name="add"),
 
-    path("costumer/list/",views.CostumerListView.as_view(),name="list"),
+    path("customer/list/",views.CostumerListView.as_view(),name="list"),
 
-    path("costumer/detail/<int:pk>/",views.CostumerDetailView.as_view(),name="detail"),
+    path("customer/detail/<int:pk>/",views.CostumerDetailView.as_view(),name="detail"),
     
-    path("costumer/<int:pk>/update",views.CustomerUpdateView.as_view(),name="update"),
+    path("customer/<int:pk>/update",views.CustomerUpdateView.as_view(),name="update"),
     
-    path("costumer/delete/<int:pk>/",views.CustomerDeleteView.as_view(),name="delete"),
+    path("customer/delete/<int:pk>/",views.CustomerDeleteView.as_view(),name="delete"),
     
 
 
